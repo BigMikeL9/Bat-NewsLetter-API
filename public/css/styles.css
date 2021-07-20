@@ -15,7 +15,18 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
+  background-color: #57837B;
+  color: #fff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #FFA0A0;
+    border-color: #FFA0A0;
+}
+
+.text-muted {
+    color: #fff!important;
 }
 
 .form-signin {

@@ -83,10 +83,15 @@ app.post("/failure", function(req, res) {
 // will allow us to work with their system (servers)
 // "|| 3000" means we can also listen on 3000 when we are running locally
 // App will work both on Heroku and on our local system.
-app.listen(process.env.PORT, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("Server is running on port 3000");
 });
 
+
+//******* When Making Changes
+// Everytime you make a change in these files, you have to "git add ." in the command line
+// and then "git commit -m 'Changed something'"
+// then "git push heroku master" to update the app
 
 
 // Mailchimp API key
